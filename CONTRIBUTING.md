@@ -1,4 +1,4 @@
-# Contributing to AI-Agents-for-Medical-Diagnostics
+# Contributing to Medical-Diagnostics-Agent
 
 🎉 **Thank you for your interest in contributing!**  
 This project explores how agentic AI systems can assist in multidisciplinary
@@ -19,8 +19,8 @@ be uploaded or referenced.
 
 ### 1. Fork and Clone
 ```bash
-git clone https://github.com/<your-username>/AI-Agents-for-Medical-Diagnostics.git
-cd AI-Agents-for-Medical-Diagnostics
+git clone https://github.com/<your-username>/Medical-Diagnostics-Agent.git
+cd Medical-Diagnostics-Agent
 ```
 
 ### 2. Create a New Branch

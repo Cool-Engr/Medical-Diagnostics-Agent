@@ -1,6 +1,6 @@
-# AI-Agents-for-Medical-Diagnostics
+# Medical-Diagnostics-Agent
 
-<img width="900" alt="image" src="https://github.com/user-attachments/assets/b7c87bf6-dfff-42fe-b8d1-9be9e6c7ce86">
+<img width="900" alt="image" src="Diagram.png">
 
 A Python project that creates specialized **LLM-based AI agents** to analyze complex medical cases.  
 The system integrates insights from different medical specialists to provide comprehensive assessments  
@@ -8,15 +8,6 @@ and suggested treatment directions, demonstrating the potential of AI in multidi
 
 ⚠️ **Disclaimer**: This project is for research and educational purposes only.  
 It is **not intended for clinical use**.
-
----
-
-## ✨ What’s New (Latest Update)
-
-- Added **MIT License**  
-- Fixed bugs and updated `requirements.txt`  
-- Added `.gitignore`  
-- Upgraded core LLM to **GPT-5**  
 
 ---
 
@@ -53,8 +44,8 @@ The outputs are then combined and summarized into **three possible health issues
 
 1. **Clone the repo:**
    ```bash
-   git clone https://github.com/ahmadvh/AI-Agents-for-Medical-Diagnostics.git
-   cd AI-Agents-for-Medical-Diagnostics
+   git clone https://github.com/Cool-Engr/Medical-Diagnostics-Agent.git
+   cd Medical-Diagnostics-Agent
    ```
 2. **Create a virtual environment and install dependencies:**
     ```bash
@@ -83,10 +74,3 @@ Planned improvements for upcoming versions include:
 - **Automated Testing**: Add evaluation pipelines and smoke-test CI with mocked LLM calls for reproducibility.  
 ---
 
-## 📜 License
-
-This repository is licensed under the **MIT License**.  
-
-You are free to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the software, subject to the conditions described in the [LICENSE](LICENSE) file.  
-
-The software is provided **“as is”**, without warranty of any kind.
