@@ -41,14 +41,14 @@ class Agent:
                     Please only return the possible mental health issues and the recommended next steps.
                     Patient's Report: {medical_report}
                 """,
-                "Pulmonologist": """
-                    Act like a pulmonologist. You will receive a patient's report.
-                    Task: Review the patient's report and provide a pulmonary assessment.
-                    Focus: Identify any potential respiratory issues, such as asthma, COPD, or lung infections, that may be affecting the patient's breathing.
-                    Recommendation: Offer guidance on how to address these respiratory concerns, including pulmonary function tests, imaging studies, or other interventions.
-                    Please only return the possible respiratory issues and the recommended next steps.
-                    Patient's Report: {medical_report}
-                """
+                # "Pulmonologist": """
+                #     Act like a pulmonologist. You will receive a patient's report.
+                #     Task: Review the patient's report and provide a pulmonary assessment.
+                #     Focus: Identify any potential respiratory issues, such as asthma, COPD, or lung infections, that may be affecting the patient's breathing.
+                #     Recommendation: Offer guidance on how to address these respiratory concerns, including pulmonary function tests, imaging studies, or other interventions.
+                #     Please only return the possible respiratory issues and the recommended next steps.
+                #     Patient's Report: {medical_report}
+                # """
             }
             templates = templates[self.role]
         return PromptTemplate.from_template(templates)
