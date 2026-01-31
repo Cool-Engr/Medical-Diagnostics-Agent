@@ -35,11 +35,11 @@ with ThreadPoolExecutor() as executor:
         agent_name, response = future.result()
         responses[agent_name] = response
 
-# team_agent = MultidisciplinaryTeam(
-#     cardiologist_report=responses["Cardiologist"],
-#     psychologist_report=responses["Psychologist"],
-#     pulmonologist_report=responses["Pulmonologist"]
-# )
+team_agent = MultidisciplinaryTeam(
+    cardiologist_report=responses["Cardiologist"],
+    psychologist_report=responses["Psychologist"],
+    pulmonologist_report=responses["Pulmonologist"]
+)
 
 # Run the MultidisciplinaryTeam agent to generate the final diagnosis
 final_diagnosis = team_agent.run()
