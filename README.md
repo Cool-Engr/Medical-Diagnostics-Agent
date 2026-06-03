@@ -59,7 +59,7 @@ The outputs are then combined and summarized into **three possible health issues
     ```bash
     OPENAI_API_KEY=your_api_key_here
     ```
-4. **Run the system:** `python main.py`
+4. **Run the system:** ```python main.py```
 ---
 
 ## 🔮 Future Enhancements
