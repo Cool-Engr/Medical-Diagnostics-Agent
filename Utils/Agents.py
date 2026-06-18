@@ -33,14 +33,14 @@ class Agent:
                     Please only return the possible causes of the patient's symptoms and the recommended next steps.
                     Medical Report: {medical_report}
                 """,
-                "Psychologist": """
-                    Act like a psychologist. You will receive a patient's report.
-                    Task: Review the patient's report and provide a psychological assessment.
-                    Focus: Identify any potential mental health issues, such as anxiety, depression, or trauma, that may be affecting the patient's well-being.
-                    Recommendation: Offer guidance on how to address these mental health concerns, including therapy, counseling, or other interventions.
-                    Please only return the possible mental health issues and the recommended next steps.
-                    Patient's Report: {medical_report}
-                """,
+                # "Psychologist": """
+                #     Act like a psychologist. You will receive a patient's report.
+                #     Task: Review the patient's report and provide a psychological assessment.
+                #     Focus: Identify any potential mental health issues, such as anxiety, depression, or trauma, that may be affecting the patient's well-being.
+                #     Recommendation: Offer guidance on how to address these mental health concerns, including therapy, counseling, or other interventions.
+                #     Please only return the possible mental health issues and the recommended next steps.
+                #     Patient's Report: {medical_report}
+                # """,
                 "Pulmonologist": """
                     Act like a pulmonologist. You will receive a patient's report.
                     Task: Review the patient's report and provide a pulmonary assessment.
@@ -53,15 +53,15 @@ class Agent:
             templates = templates[self.role]
         return PromptTemplate.from_template(templates)
     
-    # def run(self):
-    #     print(f"{self.role} is running...")
-    #     prompt = self.prompt_template.format(medical_report=self.medical_report)
-    #     try:
-    #         response = self.model.invoke(prompt)
-    #         return response.content
-    #     except Exception as e:
-    #         print("Error occurred:", e)
-    #         return None
+    def run(self):
+        print(f"{self.role} is running...")
+        prompt = self.prompt_template.format(medical_report=self.medical_report)
+        try:
+            response = self.model.invoke(prompt)
+            return response.content
+        except Exception as e:
+            print("Error occurred:", e)
+            return None
 
 # Define specialized agent classes
 class Cardiologist(Agent):
