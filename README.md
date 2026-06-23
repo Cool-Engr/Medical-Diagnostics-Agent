@@ -13,7 +13,7 @@ It is **not intended for clinical use**.
 
 ## 🚀 How It Works
 
-In the current version, we use **three AI agents (GPT-5)**, each specializing in a different aspect of medical analysis.  
+In the current version, we use **three AI agents (GPT 5)**, each specializing in a different aspect of medical analysis.  
 A medical report is passed to all agents, which run **in parallel (threading)** and return their findings.  
 The outputs are then combined and summarized into **three possible health issues** with reasoning.
 
