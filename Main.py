@@ -18,7 +18,7 @@ with open("Medical Reports\Medical Rerort - Michael Johnson - Panic Attack Disor
 agents = {
     "Cardiologist": Cardiologist(medical_report),
     "Psychologist": Psychologist(medical_report),
-    "Pulmonologist": Pulmonologist(medical_report)
+    # "Pulmonologist": Pulmonologist(medical_report)
 }
 
 # Function to run each agent and get their response
