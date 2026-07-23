@@ -5,7 +5,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from Utils.Agents import Cardiologist, Psychologist, Pulmonologist, MultidisciplinaryTeam
 from dotenv import load_dotenv
 import json, os
-# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 
 # Loading API key from a dotenv file.
 load_dotenv(dotenv_path='apikey.env')
