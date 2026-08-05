@@ -53,6 +53,6 @@ os.makedirs(os.path.dirname(txt_output_path), exist_ok=True)
 with open(txt_output_path, "w") as txt_file:
     txt_file.write(final_diagnosis_text)
 
-# print(f"Final diagnosis has been saved to {txt_output_path}")
+print(f"Final diagnosis has been saved to {txt_output_path}")
 
 
