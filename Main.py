@@ -42,9 +42,9 @@ team_agent = MultidisciplinaryTeam(
 )
 
 # Run the MultidisciplinaryTeam agent to generate the final diagnosis
-# final_diagnosis = team_agent.run()
-# final_diagnosis_text = "### Final Diagnosis:\n\n" + final_diagnosis
-# txt_output_path = "results/final_diagnosis.txt"
+final_diagnosis = team_agent.run()
+final_diagnosis_text = "### Final Diagnosis:\n\n" + final_diagnosis
+txt_output_path = "results/final_diagnosis.txt"
 
 # Ensure the directory exists
 os.makedirs(os.path.dirname(txt_output_path), exist_ok=True)
